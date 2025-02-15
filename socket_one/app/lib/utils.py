@@ -26,6 +26,7 @@ def create_token(user_id):
     jwt_token = jwt.encode(
         to_encode, settings.JWT_SECRET_KEY, algorithm=settings.JWT_ALGORITHM
     )
+    print(jwt_token, 'jwt_token hello')
     return jwt_token
 
 
