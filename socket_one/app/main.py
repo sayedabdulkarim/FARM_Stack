@@ -30,8 +30,8 @@ app.add_middleware(
 
 @app.get("/", )
 async def index():
-    logger.info({"message": "logging from the root logger"})
-    return {"message": "Welcome to the fast-api project."}
+    logger.info({"message": "logging from the root loggerrrrrrrrrrr"})
+    return {"message": "Welcome to Hello World..."}
 
 
 app.include_router(AuthRouter, prefix="/api")

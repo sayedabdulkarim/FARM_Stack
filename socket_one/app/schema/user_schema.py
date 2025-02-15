@@ -24,8 +24,8 @@ class CreateUserSchema(UserBaseSchema):
     model_config = {
         "json_schema_extra": {
             "example": {
-                "name": "Vikas Ukani",
-                "email": "vikasukani5@gmail.com",
+                "name": "Sayed Abdul Karim",
+                "email": "sakarim9124@gmail.com",
                 "password": "password",
             }
         }
