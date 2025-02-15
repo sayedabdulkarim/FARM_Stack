@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     DEBUG: bool = True
     ENVIRONMENT: Literal["local", "staging", "production"] = "local"
 
-    MONGO_URL: str = "mongodb://localhost:27017/fast-commmerce" # mongodb://<host>:<port>/<database>
+    MONGO_URL: str = "mongodb://localhost:27017/socket-test" # mongodb://<host>:<port>/<database>
     # print(MONGO_URL, ' urllllll')
     ACCESS_TOKEN_EXPIRES_IN: int = 15
     REFRESH_TOKEN_EXPIRES_IN: int = 60
