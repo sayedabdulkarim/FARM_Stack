@@ -32,6 +32,7 @@ async def create_wishlist(user, data):
 
 
 async def delete_wishlist(user, wishlist_id):
+    print(wishlist_id, 'wishlist_idddddd')
     query = {'_id': ObjectId(wishlist_id), 'user_id': user['_id']}
     found = Wishlist.find_one(query)
     if not found:
