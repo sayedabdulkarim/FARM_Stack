@@ -18,10 +18,13 @@ router = APIRouter()
 @router.post("/signin", status_code=status.HTTP_200_OK, response_model=LoginModel)
 async def signIn(data: LoginSchema):
     user = serializeDict(User.find_one({"email": data.email}))
-
+    print(user, 'user hello')
     if user:
         del user['password']
         del user['password_confirm']
+        
+        print(user, 'user hello after del')
+
         if not data.password and not verify_password(data.password, user["password"]):
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
                                 detail="Invalid login credentials. Try again.")
