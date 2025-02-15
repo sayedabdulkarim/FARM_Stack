@@ -34,11 +34,11 @@ class User(BaseModel):
     disabled: Optional[bool] = None
 
 class NewUser(BaseModel):
-    username: str = "Saik"
-    email: str = "sai@gmail.com"
-    full_name: str = "Sai K"
+    username: str = "sayedKarim"
+    email: str = "sKarim9124@gmail.com"
+    full_name: str = "Sayed Abdul Karim"
     disabled: bool = False
-    password: str = "Sai@123"
+    password: str = "qwert123"
 
 class UserInDB(User):
     hashed_password: str
