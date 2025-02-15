@@ -31,6 +31,7 @@ async def get_user(id: str) -> dict:
 
 
 async def update_user(id: str, param: dict):
+    print(param, 'parammmmm')
     if len(param) < 1:
         return False
     user = await User.find_one_and_update({"_id": ObjectId(id)}, {"$set": param})
