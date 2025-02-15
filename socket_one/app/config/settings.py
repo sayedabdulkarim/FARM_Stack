@@ -6,7 +6,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(
         env_file='.env', env_ignore_empty=True, extra='ignore')
 
-    APP_NAME: str = "Fast Commerce"
+    APP_NAME: str = "Socket Test App"
     DEBUG: bool = True
     ENVIRONMENT: Literal["local", "staging", "production"] = "local"
 
